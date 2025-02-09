@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Centralizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #d7e0e9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .header, .footer {
+            background-color: #3b5998;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            background: #3b5998;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(75, 43, 43, 0.2);
+            margin-top: 20px;
+        }
+       
+        
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="sobre.html">
+                    <img src="img/Logo.jpg" alt="Logo da Agência" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Página Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <li class="nav-item">
+                                <a class="nav-link" href="destino.html">Escolha sua viagem</a>
+                            </li>
+                            <a class="nav-link" href="cadastro1.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perguntasfrequentes.html">Perguntas Frequentes</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="visitor dropdown">
+                    <img src="https://e-com.club/mass/img/avatar.png" alt="Visitante" class="rounded-circle" width="30">
+                    <a href="login2.html">ACESSO</a>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Confirme sua senha</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputTelefone" class="form-label">Telefone</label>
+                <input type="number" class="form-control" id="inputTelefone" placeholder="(xx)00000-0000">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Escolha...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <footer class="footer">
+        <p>&copy; 2025 KKKK Viagens. Todos os direitos reservados. <br>
+            www.kkkkviagens.com.br <br>Rua São João, nº 10, São Paulo, SP. Tel: (11) 99999-9999 <br>
+        </p>
+    </footer>
+</body>
+</html>
+
